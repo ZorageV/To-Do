@@ -1,16 +1,33 @@
 import AddTODO from "./Components/AddTODO"
+import Todos from "./Components/Todos"
 
 const App = () => {
-  const dummyTodos = [
+  const dummyTodo = [
     {
-      id: 1213,
+      id: Math.random,
       name: "Wash Clothes"
-    }
+    },
+    {
+      id: Math.random,
+      name: "Wash Clothes"
+    },
+    {
+      id: Math.random,
+      name: "Wash Clothes"
+    },
+    {
+      id: Math.random,
+      name: "Wash Clothes"
+    },
+    {
+      id: Math.random,
+      name: "Wash Clothes"
+    },
   ]
   return (
     <div>
-      
       <AddTODO></AddTODO>
+      <Todos todoDetails={dummyTodo}></Todos>
     </div>
   )
 }
